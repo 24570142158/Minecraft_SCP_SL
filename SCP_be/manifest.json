@@ -1,0 +1,30 @@
+{
+ "format_version": 2,
+ "header": {
+   "description": "###绝密文件###，请勿打开",
+   "name": "SCP资料文件",
+   "uuid":"bac7943f-a839-455e-9cee-eee0c95ce436",
+   "version": [1, 0, 0],
+   "min_engine_version": [1, 16, 0],
+   "pack_scope": "world"
+  },
+ "modules": [
+   {
+     "description": "BY.ELEVEN",
+     "type": "data",
+     "uuid": "c10cb306-db27-458e-9b20-a4d3bf0eeb1f",
+     "version": [1, 0, 0]
+   }
+ ],
+ "metadata": {
+    "authors": [
+        "ELEVEN"
+    ]
+ },
+ "dependencies": [
+    {
+        "version": [1, 0, 0],
+        "uuid": "6bf049e1-1915-4974-9c07-ae1170cbec4b"
+    }
+ ]
+}

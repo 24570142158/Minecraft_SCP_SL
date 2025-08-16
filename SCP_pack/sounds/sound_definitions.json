@@ -1,0 +1,23 @@
+{
+    "format_version" : "1.20.20",
+    "sound_definitions" : {
+        "scp.small_door_open" : {
+            "__use_legacy_max_distance" : true,
+            "category" : "block",
+            "max_distance" : null,
+            "min_distance" : null,
+            "sounds" : [ 
+                "sounds/random/small_door_open"
+            ]
+        },
+        "scp.small_door_close" : {
+            "__use_legacy_max_distance" : true,
+            "category" : "block",
+            "max_distance" : null,
+            "min_distance" : null,
+            "sounds" : [ 
+                "sounds/random/small_door_close"
+            ]
+        }
+    }
+}

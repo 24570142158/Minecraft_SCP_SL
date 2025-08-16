@@ -1,0 +1,15 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "janitor_keycard": {
+            "textures": "textures/items/janitor_keycard"
+        },
+        "scientist_keycard": {
+            "textures": "textures/items/scientist_keycard"
+        },
+        "research_supervisor_keycard": {
+            "textures": "textures/items/research_supervisor_keycard"
+        }
+    }
+}

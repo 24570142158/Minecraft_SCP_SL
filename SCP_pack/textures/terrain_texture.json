@@ -1,0 +1,40 @@
+{
+    "resource_pack_name": "block_textures",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "small_door_below": {
+            "textures": "textures/blocks/small_door_below"
+        },
+        "small_door_upper": {
+            "textures": "textures/blocks/small_door_upper"
+        },
+
+
+
+        "control_door_0": {
+            "textures": "textures/blocks/control_door/0"
+        },"control_door_1": {
+            "textures": "textures/blocks/control_door/1"
+        },"control_door_2": {
+            "textures": "textures/blocks/control_door/2"
+        },"control_door_3": {
+            "textures": "textures/blocks/control_door/3"
+        },"control_door_4": {
+            "textures": "textures/blocks/control_door/4"
+        },"control_door_5": {
+            "textures": "textures/blocks/control_door/5"
+        },"control_door_6": {
+            "textures": "textures/blocks/control_door/6"
+        },"control_door_7": {
+            "textures": "textures/blocks/control_door/7"
+        },"control_door_8": {
+            "textures": "textures/blocks/control_door/8"
+        },"control_door_9": {
+            "textures": "textures/blocks/control_door/9"
+        },"control_door_10": {
+            "textures": "textures/blocks/control_door/10"
+        }
+    }
+}

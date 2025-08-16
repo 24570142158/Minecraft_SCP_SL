@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scp:small_door_entity_west",
+            "materials": {
+                "default": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/small_door_entity"
+            },
+            "geometry": {
+                "default": "geometry.small_door_entity_west"
+            },
+            "animations": {
+                "small_door_entity_west_open": "animation.small_door_entity_west_open",
+                "small_door_entity_west_close": "animation.small_door_entity_north_close",
+                "open": "controller.animation.small_door_entity_west"
+	        },
+	        "scripts": {
+		        "animate": ["open"]
+	        },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

@@ -1,0 +1,57 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "scp:small_door_entity_north",
+      "is_summonable": true,
+      "properties": {
+        "door:open": {
+        "type": "bool",
+        "default": false,
+        "client_sync": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "height": 0,
+        "width": 0
+      },
+      "minecraft:breathable": {
+        "non_breathe_blocks": [],
+        "breathes_solids": true,
+        "total_supply": 100
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false,
+          "on_damage": {
+            "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+            }
+          }
+        }
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:water_movement": {
+        "drag_factor": 0
+      }
+    }
+  }
+}

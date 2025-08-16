@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scp.keycard.idle": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.25,
+			"bones": {
+				"rightItem": {
+					"rotation": {
+						"0.0": [19, -32, -55],
+						"0.25": [42, 65, -5]
+					}
+				}
+			}
+		}
+	}
+}
