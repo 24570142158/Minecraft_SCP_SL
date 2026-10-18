@@ -1,0 +1,33 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "janitor_keycard": {
+            "textures": "textures/items/janitor_keycard"
+        },
+        "scientist_keycard": {
+            "textures": "textures/items/scientist_keycard"
+        },
+        "research_supervisor_keycard": {
+            "textures": "textures/items/research_supervisor_keycard"
+        },
+        "security_guard_keycard": {
+            "textures": "textures/items/security_guard_keycard"
+        },
+        "reworked_operative_keycard": {
+            "textures": "textures/items/reworked_operative_keycard"
+        },
+        "reworked_captain_keycard": {
+            "textures": "textures/items/reworked_captain_keycard"
+        },
+        "reworked_zone_manager_keycard": {
+            "textures": "textures/items/reworked_zone_manager_keycard"
+        },
+        "facility_manager_keycard_fixed": {
+            "textures": "textures/items/facility_manager_keycard_fixed"
+        },
+        "reworked_o5_keycard": {
+            "textures": "textures/items/reworked_o5_keycard"
+        }
+    }
+}

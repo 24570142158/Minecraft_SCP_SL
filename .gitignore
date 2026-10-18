@@ -1,0 +1,20 @@
+# 依赖与构建产物
+node_modules/
+lib/
+dist/
+*.tsbuildinfo
+
+# 编辑器与系统
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# 日志与临时文件
+*.log
+npm-debug.log*
+.codex-tmp/
+
+# 注意：.env 不忽略。
+# 它只包含 PROJECT_NAME / MINECRAFT_PRODUCT / CUSTOM_DEPLOYMENT_PATH，
+# 不含密钥；且 just.config.ts 依赖其中的 PROJECT_NAME，缺文件会导致构建失败。

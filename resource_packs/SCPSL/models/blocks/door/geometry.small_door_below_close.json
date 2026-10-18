@@ -1,0 +1,92 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.small_door_below_close",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Left_part",
+					"parent": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-5, 0, -1],
+							"size": [10, 16, 2],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [9.59072, 5.7384]},
+								"south": {"uv": [5, 0], "uv_size": [6.08017, 5.46835]},
+								"down": {"uv": [0, 4.70042], "uv_size": [10.94093, -4.70042]}
+							}
+						},
+						{
+							"origin": [-8, 0, -1],
+							"size": [3, 16, 2],
+							"uv": {
+								"north": {"uv": [56.40928, 0], "uv_size": [7.59072, 3.57806]},
+								"east": {"uv": [55.78903, 0], "uv_size": [8.21097, 3.8481]},
+								"south": {"uv": [56.40928, 0], "uv_size": [7.59072, 4.38819]},
+								"down": {"uv": [57.21941, 3.62025], "uv_size": [6.78059, -3.62025]}
+							}
+						},
+						{
+							"origin": [0, 14, -1.1],
+							"size": [1, 2.3, 2.2],
+							"pivot": [1, 14, 0],
+							"rotation": [0, 0, 30],
+							"uv": {
+								"north": {"uv": [30.66245, 24.56118], "uv_size": [3.43038, 2.27004]},
+								"south": {"uv": [30.66245, 24.40084], "uv_size": [3.43038, 1.72996]}
+							}
+						},
+						{
+							"origin": [-1, 14, -1.1],
+							"size": [2, 2, 2.2],
+							"uv": {
+								"north": {"uv": [30.64979, 24.52321], "uv_size": [3.35021, 2.27004]},
+								"south": {"uv": [31.18987, 24.63291], "uv_size": [2, 2]}
+							}
+						},
+						{
+							"origin": [-1, 14, -1.1],
+							"size": [1, 2.3, 2.2],
+							"pivot": [-1, 14, 0],
+							"rotation": [0, 0, -30],
+							"uv": {
+								"north": {"uv": [31.20253, 24.18987], "uv_size": [2.62025, 2.27004]},
+								"south": {"uv": [30.66245, 24.56962], "uv_size": [3.16034, 1.18987]}
+							}
+						}
+					]
+				},
+				{
+					"name": "Right_part",
+					"parent": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [5, 0, -1],
+							"size": [3, 16, 2],
+							"uv": {
+								"north": {"uv": [57.48945, 0], "uv_size": [6.51055, 5.46835]},
+								"south": {"uv": [58.02954, 0], "uv_size": [5.97046, 3.8481]},
+								"west": {"uv": [56.59916, 0], "uv_size": [7.40084, 3.57806]},
+								"down": {"uv": [58.56962, 2.27004], "uv_size": [5.43038, -2.27004]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

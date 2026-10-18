@@ -1,0 +1,13 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:item": {
+        "description": {
+            "identifier": "scp:janitor_keycard",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:icon": "janitor_keycard"
+        }
+    }
+}

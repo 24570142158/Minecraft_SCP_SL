@@ -1,0 +1,42 @@
+{
+  "format_version": 2,
+  "header": {
+   "description": "###绝密文件###，请勿打开",
+   "name": "SCP资料文件",
+   "uuid":"bac7943f-a839-455e-9cee-eee0c95ce436",
+   "version": [1, 0, 0],
+   "min_engine_version": [1, 21, 60],
+   "pack_scope": "world"
+  },
+  "modules": [
+   {
+     "description": "BY.ELEVEN",
+     "type": "data",
+     "uuid": "c10cb306-db27-458e-9b20-a4d3bf0eeb1f",
+     "version": [1, 0, 0]
+   },
+   {
+      "description": "Script resources",
+      "language": "javascript",
+      "type": "script",
+      "uuid": "7c7e693f-99f4-41a9-95e0-1f57b37e1e12",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "metadata": {
+    "authors": [
+        "ELEVEN"
+    ]
+  },
+  "dependencies": [
+    {
+      "uuid": "6bf049e1-1915-4974-9c07-ae1170cbec4b",
+      "version": [1, 0, 0]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.10.0"
+    }
+  ]
+}

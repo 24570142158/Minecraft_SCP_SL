@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.card": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.1667,
+			"bones": {
+				"rightItem": {
+					"rotation": {
+						"0.0": [33.2081, -37.5415, -53.4881],
+						"0.1667": [40, 47.5, 0]
+					}
+				}
+			}
+		}
+	}
+}

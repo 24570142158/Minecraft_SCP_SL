@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scp:limit_reach",
+            "materials": {
+                "default": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/small_door"
+            },
+            "geometry": {
+                "default": "geometry.null"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}
