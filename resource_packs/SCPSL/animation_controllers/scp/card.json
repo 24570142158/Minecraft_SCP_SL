@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.scp.keycard": {
+      "initial_state": "setup",
+      "states": {
+        "setup": {
+          "transitions": [
+            { "draw": "variable.holding_keycard" }
+          ]
+        },
+        "draw": {
+          "animations": ["scp_card_draw"],
+          "transitions": [
+            { "setup": "!variable.holding_keycard" }
+          ]
+        }
+      }
+    }
+  }
+}
