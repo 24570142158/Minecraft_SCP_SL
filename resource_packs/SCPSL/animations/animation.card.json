@@ -3,13 +3,12 @@
 	"animations": {
 		"animation.card": {
 			"loop": "hold_on_last_frame",
-			"animation_length": 10,
+			"animation_length": 5.1,
 			"bones": {
 				"rightItem": {
 					"rotation": {
 						"0.0": [33.2081, -37.5415, -53.4881],
-						"5.0": [40, 47.5, 0],
-						"10.0": [114.0651, 61.6018, 85.1735]
+						"5.1": [29.087, 26.7104, -17.7043]
 					}
 				}
 			}

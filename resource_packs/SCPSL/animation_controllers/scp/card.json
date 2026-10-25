@@ -10,7 +10,7 @@
           ]
         },
         "draw": {
-          "animations": ["scp_card_draw"],
+          "animations": ["scp_card_flip"],
           "transitions": [
             { "setup": "!variable.holding_keycard" }
           ]
