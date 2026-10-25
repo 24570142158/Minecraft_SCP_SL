@@ -36,7 +36,9 @@
           "variable.is_holding_right = 0.0;",
           "variable.is_blinking = 0.0;",
           "variable.last_blink_time = 0.0;",
-          "variable.hand_bob = 0.0;"
+          "variable.hand_bob = 0.0;",
+          // [SCP:keycard] 换卡探测器的历史档,初始化为 0 避免进世界首帧读未定义变量
+          "variable.last_keycard_tier = 0.0;"
         ],
         "pre_animation": [
           "variable.helmet_layer_visible = !query.has_head_gear;",
@@ -76,7 +78,13 @@
           // [SCP:keycard] 等级编码:1=清洁工 2=科学家 3=研究主管 4=警卫 5=MTF特工
           // 6=MTF指挥官 7=设施总监(竖卡) 8=区域总监(竖卡) 9=O5;0=未持卡。每帧刷新。
           "variable.keycard_tier = query.get_equipped_item_name == 'janitor_keycard' ? 1.0 : query.get_equipped_item_name == 'scientist_keycard' ? 2.0 : query.get_equipped_item_name == 'research_supervisor_keycard' ? 3.0 : query.get_equipped_item_name == 'security_guard_keycard' ? 4.0 : query.get_equipped_item_name == 'reworked_operative_keycard' ? 5.0 : query.get_equipped_item_name == 'reworked_captain_keycard' ? 6.0 : query.get_equipped_item_name == 'facility_manager_keycard_fixed' ? 7.0 : query.get_equipped_item_name == 'reworked_zone_manager_keycard' ? 8.0 : query.get_equipped_item_name == 'reworked_o5_keycard' ? 9.0 : 0.0;",
+          // [SCP:keycard] 换卡探测器:当前等级与上一帧存档比对,发生切换时 keycard_changed 恰好一帧为真
+          // (运行在客户端渲染帧时钟);比对和存档同轮完成,帧率高低不影响触发次数
+          "variable.keycard_changed = variable.keycard_tier != variable.last_keycard_tier;",
+          "variable.last_keycard_tier = variable.keycard_tier;",
           "variable.holding_keycard = variable.keycard_tier > 0.0;",
+          // [SCP:keycard] 动画开关:显示走 holding_keycard(双人称都显示),动画只认第一人称持卡
+          "variable.keycard_anim = variable.holding_keycard && variable.is_first_person;",
           "variable.keycard_geom = variable.keycard_tier == 7.0 || variable.keycard_tier == 8.0 ? 1.0 : 0.0;",
           // [SCP:keycard] 压制原版切换下沉:持卡期间把手臂高度变量钉在 1,swap 动画位移恒为零;
           // 不持卡时透传引擎值,卡→其他物品的下沉照常播放
@@ -172,6 +180,8 @@
         "third_person_melee_spear_controller": "controller.animation.player.melee_spear",
         // [SCP:keycard] 抽卡动画 = 作者的 animation.card(animations/animation.card.json,原样引用)
         "scp_card_flip": "animation.card",
+        // [SCP:keycard] 持卡姿势(静态末帧角度,值待作者在 animations/scp/card_hold.json 里编辑)
+        "scp_card_hold": "animation.scp.keycard_hold",
         "scp_keycard_controller": "controller.animation.scp.keycard"
       },
       "render_controllers": [
