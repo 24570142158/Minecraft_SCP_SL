@@ -4,23 +4,19 @@
     "description": {
       "identifier": "scp:reworked_zone_manager_keycard",
       "materials": {
-        "default": "entity_alphablend",
-        "enchanted": "entity_alphatest_glint"
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/items/reworked_zone_manager_keycard",
+        "default": "textures/entity/steve",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {
-        "default": "geometry.vertical_card"
+        "default": "geometry.scp.empty"
       },
-      "animations": {
-        "card": "animation.card"
-      },
-      "scripts": {
-        "animate": [{"card": "context.is_first_person"}]
-      },
-      "render_controllers": ["controller.render.item_default"]
+      "render_controllers": [
+        "controller.render.item_default"
+      ]
     }
   }
 }

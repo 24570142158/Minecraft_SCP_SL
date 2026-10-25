@@ -2,11 +2,32 @@
   "format_version": "1.10.0",
   "render_controllers": {
     "controller.render.scp.keycard": {
-      "geometry": "Geometry.scp_keycard",
+      "geometry": "Array.geoms[variable.keycard_geom]",
       "materials": [
         { "*": "Material.default" }
       ],
-      "textures": ["Texture.scp_keycard"]
+      "textures": ["Array.cards[variable.keycard_tier - 1.0]"],
+      "arrays": {
+        "textures": {
+          "Array.cards": [
+            "Texture.scp_card_janitor",
+            "Texture.scp_card_scientist",
+            "Texture.scp_card_research",
+            "Texture.scp_card_guard",
+            "Texture.scp_card_operative",
+            "Texture.scp_card_captain",
+            "Texture.scp_card_facility",
+            "Texture.scp_card_zone",
+            "Texture.scp_card_o5"
+          ]
+        },
+        "geometries": {
+          "Array.geoms": [
+            "Geometry.scp_card_landscape",
+            "Geometry.scp_card_vertical"
+          ]
+        }
+      }
     }
   }
 }
