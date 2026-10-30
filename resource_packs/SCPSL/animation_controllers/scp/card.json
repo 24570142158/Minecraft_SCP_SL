@@ -10,8 +10,6 @@
             { "hold_fp": "variable.keycard_anim" }
           ]
         },
-        // draw/draw2 互为镜像:换卡边沿点亮时借道对方重播;播完经 all_animations_finished
-        // 滑入 hold_fp 锁住持卡姿势;中途切第三人称去 hold_tp(中立),收卡回 setup
         "draw": {
           "animations": ["scp_card_flip"],
           "transitions": [
@@ -30,7 +28,6 @@
             { "hold_fp": "q.all_animations_finished && variable.keycard_anim" }
           ]
         },
-        // 第一人称持卡姿势:静态角度由 animations/scp/card_hold.json 提供(作者编辑处)
         "hold_fp": {
           "animations": ["scp_card_hold"],
           "transitions": [
@@ -39,7 +36,6 @@
             { "setup": "!variable.holding_keycard" }
           ]
         },
-        // 第三人称持卡:无动画,中立姿态
         "hold_tp": {
           "transitions": [
             { "hold_fp": "variable.keycard_anim" },
